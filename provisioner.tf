@@ -13,5 +13,9 @@ resource "aws_instance" "aws" {
     }
     provisioner "local-exec" {
         command = "touch file-1"     
-    } 
+    }
+    provisioner "file" {
+        source = "  "
+        destination = "   " 
+    }
 }
